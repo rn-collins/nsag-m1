@@ -169,6 +169,15 @@ body{font-family:'Manrope',sans-serif;background:#F6F3EC!important;color:#1C1B1F
 .toolkit-preview-list li::before{content:'→';color:var(--navy);font-size:0.7rem;flex-shrink:0;margin-top:2px}
 /* DIMENSION INSIGHT */
 .dim-insight{background:rgba(30,54,81,0.05);border-radius:6px;padding:0.875rem 1rem;margin-bottom:1rem;font-size:0.87rem;line-height:1.6;color:var(--text);border-left:3px solid var(--navy)}
+/* INTRO DEEP DIVE */
+.deepdive{margin:0 0 1.75rem;padding:1.5rem 1.75rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius)}
+.deepdive-h{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--text);margin-bottom:0.9rem}
+.deepdive p{font-size:0.88rem;color:var(--muted);line-height:1.75;margin-bottom:1rem}
+.deepdive p:last-child{margin-bottom:0}
+.deepdive strong{color:var(--navy)}
+.deepdive-dims{margin:0.25rem 0 1.1rem;padding-left:0;list-style:none;display:grid;gap:0.6rem}
+.deepdive-dims li{font-size:0.85rem;color:var(--muted);line-height:1.6;padding-left:0.9rem;border-left:2px solid var(--border)}
+.deepdive-dims li strong{display:block;color:var(--text);font-family:'Syne',sans-serif;font-size:0.74rem;letter-spacing:0.03em;text-transform:uppercase;margin-bottom:0.15rem}
 /* CROSS-MODULE & PIONEERING EXAMPLE */
 .module-suggest{font-size:0.82rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:6px;background:var(--white)!important}
 /* RELATED MODULES (static cross-links) */
@@ -262,13 +271,27 @@ body{font-family:'Manrope',sans-serif;background:#F6F3EC!important;color:#1C1B1F
         <div id="main-intro">
         <div class="intro-tag">M1 · Trauma-Informed Legal Space</div>
         <h1 class="intro-h">Does your legal institution protect the people inside it?</h1>
-        <p class="intro-sub">Up to 90% of justice-involved individuals have experienced at least one traumatic event. Most legal environments are designed for neutral information exchange. They are not. This challenge reveals the gap — and what closing it looks like.</p>
-        <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;margin:-0.25rem 0 1.5rem;padding:0.75rem 1rem;background:rgba(0,0,0,0.03);border-radius:8px">This is an educational self-assessment, not a validated test or audit. Your answers stay in your browser to build your result. At the end you can enter an email to receive the PDF report — used only for your report and optional NSAG follow-up, never sold or shared.</p>
+        <p class="intro-sub">Up to 90% of justice-involved individuals have experienced at least one traumatic event. Most legal environments are designed for neutral information exchange. They are not. Built for legal aid organizations, court administrators, public defenders, and law school clinics, this challenge reveals the gap between the two — and tells you, dimension by dimension, exactly where to close it first.</p>
+        <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;margin:-0.25rem 0 1.5rem;padding:0.75rem 1rem;background:rgba(0,0,0,0.03);border-radius:8px">This is an educational self-assessment, not a validated test or audit. Your answers stay in your browser to build your result. At the end you can enter an email to receive the PDF report — used only for your report and optional NSAG follow-up, never sold or shared. <span style="white-space:nowrap">Last reviewed August 2026.</span></p>
         <div class="intro-meta">
           <div class="meta-item"><div class="meta-num">12</div><div class="meta-label">Scenarios</div></div>
           <div class="meta-item"><div class="meta-num">6</div><div class="meta-label">Dimensions</div></div>
           <div class="meta-item"><div class="meta-num">8–10</div><div class="meta-label">Minutes</div></div>
           <div class="meta-item"><div class="meta-num">Free</div><div class="meta-label">No Obligation</div></div>
+        </div>
+        <div class="deepdive">
+          <div class="deepdive-h">Why This Module Exists</div>
+          <p>A legal setting is rarely just an information exchange. For someone who has lived through violence, instability, or institutional harm, a waiting room, an unfamiliar form, or an unpredictable hearing date can activate the same threat response as the original event — before a single legal question gets asked. Governance that ignores this isn't neutral; it's a design choice with consequences, and most institutions never examine it as governance at all.</p>
+          <p>This module breaks that design choice into six dimensions, each drawn from a concrete decision point your institution already makes every week:</p>
+          <ul class="deepdive-dims">
+            <li><strong>Physical Environment</strong>Privacy, acoustic separation, and light shape a client's nervous system before intake begins. Design is governance, not decor.</li>
+            <li><strong>Procedural Design</strong>Plain-language intake and structured court preparation replace unpredictability — which the body reads as danger — with something it can plan around.</li>
+            <li><strong>Language Access</strong>Proactive interpreter identification, offered before a client has to ask, moves the burden of navigating the system off the person least equipped to carry it.</li>
+            <li><strong>Staff Training</strong>Secondary traumatic stress affects over half of legal service workers. Staff who were never taught the neuroscience of trauma can't be expected to recognize it in the room.</li>
+            <li><strong>Access &amp; Accommodation</strong>For someone who cannot safely return to a location tied to harm, remote or no-barrier service pathways aren't a courtesy — they're the difference between service and no service.</li>
+            <li><strong>Feedback &amp; Accountability</strong>A complaint routed through the person it's about isn't independent. Governance that isn't measured isn't governed — it's just intention.</li>
+          </ul>
+          <p>Structurally, <strong>PIONEERING</strong> governance looks less dramatic than it sounds: standards written into policy instead of held in one staff member's head, tied to a named person accountable for them, so the practice survives when that person moves on. It rarely starts as a program. One legal aid organization got there by assessing its waiting room, testing its intake forms with real clients, and requiring a 20-minute debrief after high-stress interactions — and saw measurable gains in both client satisfaction and staff wellbeing within six months. A public defender's office got there by removing a television from the waiting room and adding quiet seating, then building formally on that single change over the following months. Neither started with a mandate. Both started with one dimension, made explicit.</p>
         </div>
         <button class="btn-start" onclick="beginFromIntro()">Begin the Challenge →</button>
         </div><!-- end main-intro -->
@@ -689,7 +712,9 @@ function revealResults() {
     bridgeText = 'You have governance in place. The gap to PIONEERING is in dimensions that are partially implemented — practice exists but policy does not. The M1 Governance Toolkit contains specific policy language for each gap and a 90-day roadmap for institutions at your exact tier.';
     bridgeBtns = '<a href="' + GUMROAD + '" target="_blank" class="bridge-btn-primary" style="background:#4D45A8">Get the M1 Governance Toolkit — $500</a>'
               + '<a href="' + BOOK + '" class="bridge-btn-secondary" style="border:1.5px solid #4D45A8;color:#4D45A8">Book a Discovery Call</a>';
-    crossModule = 'If your ' + DIM_NAMES[minDim] + ' score is your lowest gap, the M' + (minDim < 2 ? '2' : minDim < 4 ? '8' : '2') + ' Challenge addresses the governance infrastructure most likely to accelerate your progress in that dimension.';
+    crossModule = minDim === 3
+      ? 'Your lowest-scoring dimension is ' + DIM_NAMES[minDim] + '. Secondary traumatic stress is the most common reason M1 governance stalls at this tier — the M8 Challenge addresses that infrastructure directly.'
+      : 'Your lowest-scoring dimension is ' + DIM_NAMES[minDim] + '. The M1 Governance Toolkit addresses it with dimension-specific policy language. If your organization also uses any AI-assisted intake or case management tools, the M2 Challenge is a logical next assessment.';
   } else if (avg >= 1.5) {
     tier = 'DEVELOPING'; tierColor = '#956B18';
     rec = 'Your organization is meeting baseline legal requirements without yet designing for the physiological realities of trauma. Governance exists in some dimensions but depends on individual champions rather than institutional policy. When that person leaves, the governance leaves with them.';
@@ -901,17 +926,6 @@ function cinematicReveal(tier, tierColor, callback) {
     overlay.classList.remove('active');
     setTimeout(callback, 500);
   }, 2200);
-}
-
-// ANIMATED COUNTER
-function animateCounter(el, target, suffix, duration) {
-  let start = 0;
-  const step = target / (duration / 16);
-  const timer = setInterval(() => {
-    start = Math.min(start + step, target);
-    el.textContent = Math.round(start) + (suffix || '');
-    if (start >= target) clearInterval(timer);
-  }, 16);
 }
 
 // SHARE RESULT
