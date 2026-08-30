@@ -1,6 +1,6 @@
-# NSAG M1 — Governance & Accountability
+# NSAG M1 — Trauma-Informed Legal Space
 
-Retired NSAG prototype module covering Governance & Accountability.
+Retired standalone deployment of NSAG module M1, Trauma-Informed Legal Space (Legal & Justice). The module's canonical page is https://nsag-site.vercel.app/m1.
 
 **Live:** https://nsag-m1.vercel.app
 
@@ -10,7 +10,7 @@ This prototype has been retired. The deployment remains online as a record; it i
 
 ## Repository contents
 
-`index.html`, `vercel.json`
+`index.html`, `vercel.json`, `og.png`, `favicon.svg`, `apple-touch-icon.png`
 
 ## Local development
 
